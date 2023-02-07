@@ -1,2 +1,2 @@
-# notion-clone
-A clone of Notion application
+# Blogging application
+React.js frontend and Spring boot backend
