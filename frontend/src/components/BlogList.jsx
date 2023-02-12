@@ -5,9 +5,11 @@ const BlogList = (props) => {
   return (
     <div>
       <p>BlogList</p>
-      {props.items.map((item) => (
-        <BlogItem item={item} />
-      ))}
+      <ul>
+        {props.items.map((item) => (
+          <BlogItem item={item} key={item.id} />
+        ))}
+      </ul>
     </div>
   );
 };

@@ -1,26 +1,13 @@
 import React from "react";
 import BlogList from "../components/BlogList";
 
-const items = [
-  {
-    name: "blog 1",
-  },
-  {
-    name: "blog 2",
-  },
-  {
-    name: "blog 3",
-  },
-  {
-    name: "blog 4",
-  },
-];
+import BlogData from "../dummyData/BlogData";
 
 const HomePage = () => {
   return (
     <div>
       <p>HomePage</p>
-      <BlogList items={items} />
+      <BlogList items={BlogData} />
     </div>
   );
 };

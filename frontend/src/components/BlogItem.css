@@ -1,0 +1,32 @@
+.blog-item {
+  width: 400px;
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.blog-item__image {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.blog-info {
+  padding: 0.5rem;
+}
+
+.blog-info__heading {
+  color: #212529;
+}
+
+.blog-info__description {
+  margin-top: 0.2rem;
+  color: #495057;
+}
+
+.blog-info__date {
+  color: #495057;
+  font-size: 0.8rem;
+  margin-top: 0.4rem;
+}
