@@ -1,0 +1,28 @@
+.blog-content {
+  width: 60%;
+  margin: auto;
+
+  font-size: 1.2rem;
+}
+
+.blog-content__heading {
+  color: #212529;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.blog-content__date {
+  color: #495057;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.blog-content__description {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.blog-content__main-content {
+  margin-top: 2rem;
+  line-height: 1.5rem;
+}
