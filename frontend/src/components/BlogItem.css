@@ -1,6 +1,6 @@
 .blog-item {
-  width: 400px;
   padding: 1rem;
+  width: 400px;
 
   display: flex;
   flex-direction: column;
