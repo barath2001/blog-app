@@ -8,8 +8,8 @@ const BlogItem = (props) => {
   const dateString = formatDate(props.item.dateCreated);
 
   return (
-    <Link to={`/blog/${props.item.id}`}>
-      <li className="blog-item">
+    <li className="blog-item">
+      <Link to={`/blog/${props.item.id}`}>
         <img src={laptopImage} className="blog-item__image" />
         {/* following line is commented for testing purposes */}
         {/* <img src={props.item.image} /> */}
@@ -18,8 +18,8 @@ const BlogItem = (props) => {
           <p className="blog-info__description">{props.item.description}</p>
           <p className="blog-info__date">{dateString}</p>
         </div>
-      </li>
-    </Link>
+      </Link>
+    </li>
   );
 };
 

@@ -1,10 +1,15 @@
 .blog-item {
   padding: 1rem;
   width: 400px;
+  border-radius: 5px;
 
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.blog-item:hover {
+  background-color: #f3f0ff;
 }
 
 .blog-item__image {
