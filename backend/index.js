@@ -1,8 +1,10 @@
 import express from "express";
+import cors from "cors";
 import connectDB from "./mongodb/connect.js";
 import blogRouter from "./routes/blog.routes.js";
 
 const app = express();
+app.use(cors());
 app.use(express.json());
 
 app.get("/", (req, res) => {
