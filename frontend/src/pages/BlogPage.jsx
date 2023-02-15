@@ -1,13 +1,12 @@
 import React from "react";
-import { useParams } from "react-router-dom";
-import BlogData from "../dummyData/BlogData";
+import { useLoaderData, useParams } from "react-router-dom";
 import { formatDate } from "../util/date-formatting";
 
 import "./BlogPage.css";
 
 const BlogPage = () => {
-  let { blogId } = useParams();
-  const blogData = BlogData.find((item) => item.id === blogId);
+  const blogData = useLoaderData();
+  console.log(blogData);
 
   return (
     <div className="blog-content">
@@ -20,3 +19,12 @@ const BlogPage = () => {
 };
 
 export default BlogPage;
+
+export const loader = async ({ params }) => {
+  const response = await fetch(
+    `http://localhost:8080/api/v1/blogs/${params.blogId}`
+  );
+
+  const data = await response.json();
+  return data;
+};

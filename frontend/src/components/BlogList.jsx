@@ -6,7 +6,7 @@ const BlogList = (props) => {
   return (
     <ul className="blog-list">
       {props.items.map((item) => (
-        <BlogItem item={item} key={item.id} />
+        <BlogItem item={item} key={item._id} />
       ))}
     </ul>
   );

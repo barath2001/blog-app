@@ -1,20 +1,23 @@
 import react from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import RootLayout from "./components/RootLayout";
-import HomePage from "./pages/HomePage";
-import BlogPage from "./pages/BlogPage";
+import RootLayout from "./pages/RootLayout";
+import HomePage, { loader as blogListLoader } from "./pages/HomePage";
+import BlogPage, { loader as blogLoader } from "./pages/BlogPage";
 import AboutPage from "./pages/AboutPage";
 import AuthPage from "./pages/AuthPage";
+import ErrorPage from "./pages/ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <RootLayout />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
         element: <HomePage />,
+        loader: blogListLoader,
       },
       {
         path: "/auth",
@@ -23,6 +26,7 @@ const router = createBrowserRouter([
       {
         path: "/blog/:blogId",
         element: <BlogPage />,
+        loader: blogLoader,
       },
       {
         path: "/about",
