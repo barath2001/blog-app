@@ -9,7 +9,7 @@ const BlogItem = (props) => {
 
   return (
     <li className="blog-item">
-      <Link to={`/blog/${props.item._id}`}>
+      <Link to={`blog/${props.item._id}`}>
         <img src={laptopImage} className="blog-item__image" />
         {/* following line is commented for testing purposes */}
         {/* <img src={props.item.image} /> */}

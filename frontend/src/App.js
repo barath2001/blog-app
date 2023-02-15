@@ -15,21 +15,21 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        path: "/",
+        index: true,
         element: <HomePage />,
         loader: blogListLoader,
       },
       {
-        path: "/auth",
+        path: "auth",
         element: <AuthPage />,
       },
       {
-        path: "/blog/:blogId",
+        path: "blog/:blogId",
         element: <BlogPage />,
         loader: blogLoader,
       },
       {
-        path: "/about",
+        path: "about",
         element: <AboutPage />,
       },
     ],
