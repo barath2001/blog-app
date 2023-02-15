@@ -6,7 +6,6 @@ import "./BlogPage.css";
 
 const BlogPage = () => {
   const blogData = useLoaderData();
-  console.log(blogData);
 
   return (
     <div className="blog-content">

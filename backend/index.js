@@ -9,9 +9,9 @@ app.use(cors());
 app.use(express.json());
 
 // using a middleware, add latency to all requests to test UX or frontend
-app.use((req, res, next) => {
-  setTimeout(next, 1000);
-});
+// app.use((req, res, next) => {
+//   setTimeout(next, 1000);
+// });
 
 app.get("/", (req, res) => {
   res.send({ message: "Server is running!" });
