@@ -11,7 +11,7 @@ const ErrorPage = () => {
   let description = "Could not find this page";
 
   if (error.status) title = `Status: ${error.status}`;
-  if (error.data.message) description = error.data.message;
+  if (error.data && error.data.message) description = error.data.message;
 
   return (
     <>

@@ -23,9 +23,7 @@ export const loader = async () => {
   if (response.ok) {
     return response;
   } else {
-    throw json(
-      { message: "Could not fetch blogs" },
-      { status: response.status }
-    );
+    const error = await response.json();
+    throw json({ message: error.message }, { status: response.status });
   }
 };
