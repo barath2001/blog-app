@@ -6,6 +6,9 @@ import {
   redirect,
   useSubmit,
 } from "react-router-dom";
+
+import ReactMarkdown from "react-markdown";
+
 import { formatDate } from "../util/date-formatting";
 
 import "./BlogPage.css";
@@ -28,7 +31,8 @@ const BlogPage = () => {
       <p className="blog-content__date">{formatDate(blogData.dateCreated)}</p>
       <p className="blog-content__description">{blogData.description}</p>
       <img className="blog-content__image" src={blogData.image} />
-      <p className="blog-content__main-content">{blogData.content}</p>
+      {/* <p className="blog-content__main-content">{blogData.content}</p> */}
+      <ReactMarkdown className="markdown-content" children={blogData.content} />
       <div className="blog-action">
         <Link to="edit" className="blog-action__input blog-action__input_main">
           Edit

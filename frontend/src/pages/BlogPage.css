@@ -55,3 +55,23 @@
 .blog-action__input_red {
   background-color: #fa5252;
 }
+
+.markdown-content h1,
+h2,
+h3 {
+  margin-top: 2.5rem;
+}
+
+.markdown-content p,
+a,
+li {
+  margin-top: 0.4rem;
+}
+
+.markdown-content a {
+  color: rgb(0, 153, 255);
+}
+
+.markdown-content li {
+  margin-left: 2rem;
+}
