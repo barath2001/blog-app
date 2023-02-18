@@ -5,7 +5,6 @@ import BlogForm from "../components/BlogForm";
 const NewBlogPage = () => {
   return (
     <div>
-      NewBlogPage
       <BlogForm />
     </div>
   );

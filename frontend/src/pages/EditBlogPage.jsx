@@ -6,7 +6,6 @@ const EditBlogPage = () => {
   const blogDetail = useRouteLoaderData("blog-detail");
   return (
     <div>
-      EditBlogPage
       <BlogForm blogDetail={blogDetail} method="PATCH" action="/blog/new" />
     </div>
   );
