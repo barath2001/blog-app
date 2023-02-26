@@ -57,14 +57,14 @@
 }
 
 .markdown-content h1,
-h2,
-h3 {
+.markdown-content h2,
+.markdown-content h3 {
   margin-top: 2.5rem;
 }
 
 .markdown-content p,
-a,
-li {
+.markdown-content a,
+.markdown-content li {
   margin-top: 0.4rem;
 }
 
