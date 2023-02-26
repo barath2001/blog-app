@@ -1,4 +1,4 @@
-import react from "react";
+import react, { useContext } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import RootLayout from "./pages/RootLayout";
@@ -12,6 +12,7 @@ import AuthPage from "./pages/AuthPage";
 import ErrorPage from "./pages/ErrorPage";
 import NewBlogPage, { action as newBlogAction } from "./pages/NewBlogPage";
 import EditBlogPage, { action as editBlogAction } from "./pages/EditBlogPage";
+import ThemeContext from "./context/theme-context";
 
 const router = createBrowserRouter([
   {
@@ -59,7 +60,13 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  return <RouterProvider router={router} />;
+  const themeCtx = useContext(ThemeContext);
+
+  return (
+    <div className="app" theme={themeCtx.theme}>
+      <RouterProvider router={router} />
+    </div>
+  );
 }
 
 export default App;
