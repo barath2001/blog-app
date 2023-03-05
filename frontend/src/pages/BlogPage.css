@@ -6,13 +6,11 @@
 }
 
 .blog-content__heading {
-  color: #212529;
   text-align: center;
   margin-top: 2rem;
 }
 
 .blog-content__date {
-  color: #495057;
   text-align: center;
   margin-top: 0.5rem;
 }
@@ -49,11 +47,11 @@
 }
 
 .blog-action__input_main {
-  background-color: #5f3dc4;
+  background-color: var(--accent);
 }
 
 .blog-action__input_red {
-  background-color: #fa5252;
+  background-color: var(--main-red-color);
 }
 
 .markdown-content h1,

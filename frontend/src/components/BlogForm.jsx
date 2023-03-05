@@ -51,7 +51,9 @@ const BlogForm = ({ blogDetail, method, action }) => {
         </div>
       </div>
       <div className="form-action">
-        <button className="form-action__button ">Cancel</button>
+        <button className="form-action__button form-action__button_cancel">
+          Cancel
+        </button>
         <button
           className="form-action__button form-action__button_main"
           type="submit"

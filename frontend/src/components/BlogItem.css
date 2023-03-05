@@ -9,7 +9,7 @@
 }
 
 .blog-item:hover {
-  background-color: #f3f0ff;
+  background-color: var(--background-secondary);
 }
 
 .blog-item__image {
@@ -22,16 +22,13 @@
 }
 
 .blog-info__heading {
-  color: #212529;
 }
 
 .blog-info__description {
   margin-top: 0.2rem;
-  color: #495057;
 }
 
 .blog-info__date {
-  color: #495057;
   font-size: 0.8rem;
   margin-top: 0.4rem;
 }

@@ -4,8 +4,31 @@
   box-sizing: border-box;
 }
 
+:root {
+  --background-primary: #f8f9fa;
+  --background-secondary: #e9ecef;
+  --text-primary: #212529;
+  --accent: #9775fa;
+
+  --main-theme-color: #5f3dc4;
+  --main-green-color: #40c057;
+  --main-red-color: #fa5252;
+}
+
+[theme="DARK"] {
+  --background-primary: #212529;
+  --background-secondary: #343a40;
+  --text-primary: #dadada;
+}
+
 body {
   font-family: sans-serif;
+}
+
+.app {
+  background-color: var(--background-primary);
+  color: var(--text-primary);
+  min-height: 100vh;
 }
 
 input,
@@ -16,6 +39,6 @@ textarea {
 }
 
 a {
-  color: black;
   text-decoration: none;
+  color: inherit;
 }

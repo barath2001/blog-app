@@ -1,7 +1,4 @@
 :root {
-  --main-theme-color: #5f3dc4;
-  --main-green-color: #40c057;
-  --main-red-color: #fa5252;
   --light-green-color: #ebfbee;
   --light-red-color: #fff5f5;
 }
@@ -10,7 +7,7 @@
   width: 500px;
   margin: 2rem auto;
   padding: 2rem;
-  background-color: #f3f0ff;
+  background-color: var(--background-secondary);
   border-radius: 0.5rem;
 
   display: flex;
@@ -19,7 +16,6 @@
 }
 
 .form__title {
-  color: var(--main-theme-color);
   font-size: 2rem;
   text-align: center;
 }
@@ -45,6 +41,8 @@
   border-radius: 0.2rem;
   min-width: 100%;
   max-width: 100%;
+  color: var(--text-primary);
+  background-color: var(--background-primary);
 }
 
 .input-field__label_accept {
@@ -68,10 +66,14 @@
   font-size: 1rem;
   border: none;
   border-radius: 0.2rem;
-  background-color: white;
 }
 
 .form-action__button_main {
   color: white;
-  background-color: var(--main-theme-color);
+  background-color: var(--accent);
+}
+
+.form-action__button_cancel {
+  color: white;
+  background-color: var(--main-red-color);
 }
